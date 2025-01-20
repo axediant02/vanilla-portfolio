@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #040D12;
     width: screen;
@@ -12,6 +18,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     background-color: #183D3D;
+    height: 80px;
 }
 
 nav ul {
@@ -46,4 +53,23 @@ p{
     display: inline;
     height: 1px;
     margin: 5px;
+}
+
+.banner-section h1{
+    font-size: 50px;
+    color: #93B1A6;
+    padding: 50px;
+    padding-left: 60px;
+}
+
+.banner-section p{
+    font-size: 20px;
+    color: #E8ECD7;
+    padding-left: 60px;
+}
+
+.banner-section span{
+    color: #93B1A6;
+    text-decoration: underline;
+    font-style: italic;
 }
