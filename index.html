@@ -3,145 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Ni Ian</title>
-    <meta property="og:image" content="./assets/icons/portfolio.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Work in Progress</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #121212;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .loader {
+            margin: 20px 0;
+            border: 5px solid #444;
+            border-top: 5px solid #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .countdown {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .email-box {
+            margin-top: 20px;
+        }
+
+        input, button {
+            padding: 10px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input {
+            width: 250px;
+        }
+
+        button {
+            background: #ff6600;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #cc5500;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 <body>
-    <main>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                </ul>
-                <div class="contact-information">
-                <p>ianfredcaballero@gmail.com</p>
-                <p>Cebu City, Philippines</p>
-                <p>09123456789</p>
-                </div>
-            </nav>
-            <div class="banner-section">
-                <div class="banner-content">
-                    <h1>Hello, I am<br>
-                        <span>Ian Fred Caballero,</span>
-                    a Web Developer from Philippines.</h1>
-                    <div class="social-icon">
-                        <a href="https://github.com/axediant02" target="_blank">
-                            <img src="assets/icons/github.png" alt="GitHub">
-                        </a>
-                        <a href="https://linkedin.com/in/ian-fred-caballero-818430193" target="_blank">
-                            <img src="assets/icons/linkedin.png" alt="LinkedIn">
-                        </a>
-                        <a href="https://twitter.com/yourusername" target="_blank">
-                            <img src="assets/icons/twiiter.png" alt="Twitter">
-                        </a>
-                        <a href="https://www.facebook.com/ian.caballero.364083" target="_blank">
-                            <img src="assets/icons/facebook.png" alt="Facebook">
-                        </a>
-                    </div>
-                    <button id="download-cv">Download CV</button>
-                </div>
-                <div class="banner-photo">
-                    <img src="assets/img/coding.svg" alt="" srcset="">
-                </div>
-            </div>
-            <section id="projects">
-                <div class="projects-section">
-                    <div class="projects-header">
-                        <h1>PROJECTS</h1>
-                    </div>
-                    <div class="projects">
-                        <div class="project">
-                            <div class="project-image">
-                                <img src="assets/img/project1.png" alt="">
-                            </div>
-                            <div class="project-content">
-                                <h1>Project 1</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                                <button>View Project</button>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="project-image">
-                                <img src="assets/img/project2.png" alt="">
-                            </div>
-                            <div class="project-content">
-                                <h1>Project 2</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                                <button>View Project</button>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="project-image">
-                                <img src="assets/img/project3.png" alt="">
-                            </div>
-                            <div class="project-content">
-                                <h1>Project 3</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                                <button>View Project</button>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <div class="project-image">
-                                <img src="assets/img/project4.png" alt="">
-                            </div>
-                            <div class="project-content">
-                                <h1>Project 4</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-                                <button>View Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section id="about">
-                <div class="about-section">
-                <div class="skills-container">
-                    <div class="skills-header">
-                    <h1>SKILLS</h1>
-                    </div>
-                    <div class="skills">
-                    <div class="frontend">
-                        <h1>FRONTEND</h1>
-                        <div class="frontend-skill">
-                        <ul>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Vue</li>
-                            <li>Tailwind</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="backend">
-                        <h1>BACKEND</h1>
-                        <div class="backend-skill">
-                        <ul>
-                            <li>Laravel</li>
-                            <li>Django</li>
-                            <li>PHP</li>
-                            <li>Python</li>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="experience-container">
-                    <h1>EXPERIENCE</h1>
-                </div>
-            </div>
-            <div class="about-me">
-                <h1>WHO AM I?</h1>
-            </div>
-            </section>
-              
-    </main>
+    <h1>Website still in progress ;>!</h1>
+    <p>Stay tuned while we build the future.</p>
+
+    <div><img src="assets/img/wait.gif" alt=""></div>
+
+    <div class="countdown" id="countdown"></div>
+
+    <div class="email-box">
+        <p>Subscribe for updates:</p>
+        <input type="email" placeholder="Enter your email">
+        <button>Notify Me</button>
+    </div>
+
+    <div class="social-links">
+        <a href="#" target="_blank">🔵 Facebook</a>
+        <a href="#" target="_blank">📷 Instagram</a>
+        <a href="#" target="_blank">🐦 Twitter</a>
+    </div>
+
+    <script>
+        function countdownTimer() {
+            const launchDate = new Date("March 15, 2025 00:00:00").getTime();
+            const x = setInterval(function () {
+                const now = new Date().getTime();
+                const timeLeft = launchDate - now;
+
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML = 
+                    `Launching in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+                if (timeLeft < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "We're Live!";
+                }
+            }, 1000);
+        }
+
+        countdownTimer();
+    </script>
+
 </body>
-<script src="index.js"></script>
 </html>
